@@ -1,0 +1,59 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 10px;
+}
+p {
+  margin: 5px;
+}
+select {
+  padding: 4px;
+  border-radius: 4px;
+  margin: 5px 10px;
+}
+button {
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.button1 {
+  border: 2px solid green;
+}
+.button2 {
+  border: 2px solid navy; 
+}
+.button3 {
+  border: 2px solid black; 
+}
+.button3:active {
+  color:white;
+  background-color: black;
+  border: 2px solid black; 
+}
+.button4 {
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+.button4:active {
+  color:white;
+  background-color: black;
+  border: 2px solid black; 
+  padding: 5px 10px;
+}
+.selected1{
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+}
+.selected2{
+  color: white;
+  background-color: navy;
+  border: 2px solid navy;
+}
+.output {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
