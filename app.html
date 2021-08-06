@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="Page1">
+    
+    <h1 id="pageTitle">book recommendations</h1>
+    
+    <p class="text">What genre would you like?</p>
+
+    <select name="genreDropdown" id="genreDropdown" onChange="updateScreen()">
+    </select>
+
+    <br>
+    <br>  
+
+    <p class="text">Pick your length:</p>
+    <button id="shortButton1" class="button1" onClick="lengthButtonClick('Short')" >shorter</button>
+    <button id="longButton1" class="button1" onClick="lengthButtonClick('Long')" >longer</button>
+
+    <br>
+    <br>  
+
+    <p class="text">Series or standalone?</p>
+    <button id="seriesButton1" class="button2" onClick="seriesButtonClick('Series')" >series</button>
+    <button id="aloneButton1" class="button2" onClick="seriesButtonClick('Standalone')" >standalone</button>
+
+    <br>
+    <br> 
+
+    <p class="text">Here's some books for you:</p>
+    <p id="outputText" class="output"></p>
+    <br> 
+    <br>
+    <button id="page1to2" class="button3" onClick="changePage('Page1','Page2')" >Add books to your list</button>
+    <button id="page1to3" class="button3" onClick="changePage('Page1','Page3')" >See your full tbr list</button>
+ 
+    <br>
+    </div>
+
+    <div id="Page2" style="display: none">
+    <h1 id="pageTitle">book recommendations</h1>
+
+    <p class="text">Add books to your tbr list here</p>
+
+    <br>    
+    <p class="text">Title:</p>
+    <input type="text" id="titleInput">
+
+    <br>
+    <p class="text">Author:</p>
+    <input type="text" id="authorInput">
+
+    <br>
+    <br>
+    <p class="text">Genre:</p>
+
+    <select name="genreDropdown2" id="genreDropdown2" onChange="newGenre()">
+    
+    <option value="Other">Other</option>  
+    </select>
+
+    <input type="text" id="genreInput" style="display: none">
+
+    <br>
+    <br>  
+
+    <p class="text">Length:</p>
+    <button id="shortButton2" class="button1" onClick = "setLength('Short')">shorter</button>
+    <button id="longButton2" class="button1" onClick = "setLength('Long')">longer</button>
+
+    <br>
+    <br>  
+
+    <p class="text">Series or standalone?</p>
+    <button id="seriesButton2" class="button2" onClick = "setSeries('Series')">series</button>
+    <button id="aloneButton2" class="button2" onClick = "setSeries('Standalone')">standalone</button>
+
+    <br>
+    <br> 
+
+    <button id="addBook" class="button3" onClick = "addBook()">Add book to list</button>
+    <button id="clearCurrent" class="button3" onClick = "deleteItem(next)">Clear current</button>
+    <br>
+    <button id="page2to1" class="button3" onClick="changePage('Page2','Page1')" >Back to recommendation page</button>
+    <button id="page2to3" class="button3" onClick="changePage('Page2','Page3')" >See your full tbr list</button>
+    <br>
+
+    </div>
+
+    <div id="Page3"  style="display: none">
+    <h1 id="pageTitle">book recommendations</h1>
+
+    <p class="text">Your tbr list:</p>
+    <p id="tbrList" class="output">hi</p>
+    <br>
+    <p class="text">Edit:</p>
+    <input type="text" id="deleteInput">
+    <button id="deleteButton" class="button4" onClick="deleteBook()" >Delete item</button>
+    <br>
+    <br>
+    <button id="page3to1" class="button3" onClick="changePage('Page3','Page1')" >Back to recommendation page</button>
+    <button id="page3to2" class="button3" onClick="changePage('Page3','Page2')" >Add books to your list</button>
+    </div>
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
