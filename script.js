@@ -1,8 +1,8 @@
-var bookTitles = ["Mistborn", "The Fellowship of the Ring", "The Martian", "Guards, Guards", "Warcross","The Disappearing Spoon", "The Lightning Thief", "What If?: Serious Scientific Answers to Absurd Hypothetical Questions", "Cinder","Invictus", "Ember"];
-var bookAuthors = ["Brandon Sanderson","J.R.R. Tolkein","Andy Weir","Terry Pratchett","Marie Lu","Sam Kean","Rick Riordan","Randall Munroe","Marissa Meyer","Ryan Graudin","Mason & Stephens"];
-var bookGenres = ["Fantasy", "Fantasy", "Sci-Fi", "Fantasy","Sci-Fi","Nonfiction", "Fantasy", "Nonfiction","Sci-Fi","Sci-Fi","Adventure"];
-var bookLengths = ["Long", "Long", "Short", "Short", "Short", "Long", "Short","Short","Long","Long","Long"];
-var bookSeries = ["Series", "Series", "Standalone", "Series","Series", "Standalone", "Series", "Standalone", "Series","Standalone", "Standalone"];
+var bookTitles = ["Mistborn", "The Fellowship of the Ring", "The Martian", "Guards, Guards", "Warcross","The Disappearing Spoon", "The Lightning Thief", "What If?: Serious Scientific Answers to Absurd Hypothetical Questions", "Cinder","Invictus"];
+var bookAuthors = ["Brandon Sanderson","J.R.R. Tolkein","Andy Weir","Terry Pratchett","Marie Lu","Sam Kean","Rick Riordan","Randall Munroe","Marissa Meyer","Ryan Graudin"];
+var bookGenres = ["Fantasy", "Fantasy", "Sci-Fi", "Fantasy","Sci-Fi","Nonfiction", "Fantasy", "Nonfiction","Sci-Fi","Sci-Fi"];
+var bookLengths = ["Long", "Long", "Short", "Short", "Short", "Long", "Short","Short","Long","Long"];
+var bookSeries = ["Series", "Series", "Standalone", "Series","Series", "Standalone", "Series", "Standalone", "Series","Standalone"];
 var lengthChoice = "";
 var seriesChoice = "";
 next =  bookTitles.length;
